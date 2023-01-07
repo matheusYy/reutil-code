@@ -1,0 +1,21 @@
+minhas anotações sobre o arquivo especificado:
+
+ formik, meu primeiro contato com essa biblioteca de validação de email, ela tem alguns metodos
+ embutidos que são declarados automaticamente quando você chama o metodo handleSubmit que pelo que 
+ parece já era do react...
+ 
+ bom, você passa props em uma variavel e usa nos componentes e passa a função hook useFormik para criar 
+ um array de objetos, algo que eu tenho uma certa facilidade.
+ 
+ handleSubmit : manipulador de eventos de envio
+ handleChange: metodo para passar as props dos formularios, os dados, os valores, etc...
+ 
+  usando "values" podemos acessar o objeto de dados do formik, se eu não me engano isso é uma função para
+  manipular objetos em javaScript, e acessar seus dados passando os valores para a função values().
+  
+  
+  estava ocorrendo um erro estranho, nem tão estranho assim, mas..
+   as passar as props, formik.values.name no console mostrava 3 objetos, um que era esse que estava sendo referenciado no 
+   html, e o outro dentro do array criado, olhando a documentação do formik, o id que era difente do nome que estava no array, criou mais um array? estranho
+   
+    pelo que parece o id e o nome que está dentro do arry do formik function devem ter o mesmo nome
