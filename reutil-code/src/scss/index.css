@@ -1,0 +1,14 @@
+@root {
+  --dark: $dark;
+}
+.btn-pdr {
+  width: 60;
+  height: 25px;
+  border: 0;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
