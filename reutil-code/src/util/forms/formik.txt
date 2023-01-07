@@ -18,4 +18,27 @@ minhas anotações sobre o arquivo especificado:
    as passar as props, formik.values.name no console mostrava 3 objetos, um que era esse que estava sendo referenciado no 
    html, e o outro dentro do array criado, olhando a documentação do formik, o id que era difente do nome que estava no array, criou mais um array? estranho
    
-    pelo que parece o id e o nome que está dentro do arry do formik function devem ter o mesmo nome
+    pelo que parece o id e o nome que está dentro do objeto do formik function devem ter o mesmo nome
+
+
+ok, conseguimos validar o email usando o yup e o formik 
+ o yup cria um objeto com varios valores que... o formik usa em validationShama? algo assim
+ 
+ existem tres imports para formik que eu usei para fazer a validação simples, o formik, field, e formik
+ 
+ formik, nós passamos nele os valores iniciais, o validationSchema que é o array de objetos que criamos no yup e o onSubmit que roda um evento quando o formulario é enviado
+ 
+antes de tudo um observação, depois de criar o formik e preencher os dados inciais, nós temos que criar um arrow function que contem em seus parametros o errors e touched, depois é passado o form e field
+
+form: o furmulario em si, não sei sobre as configurações dele, mas para validação simples não foi necessario
+
+fild: são os inputs em si, ainda não sei sobre as configurações dele, placeholder, required
+
+ depois de tudo, usamos errors e touched para validar se os emais estão preenchidos ou não, criamos um tete lógico e renderizamos um div com o nosso erro personalizado
+ 
+ 
+ 
+ names: o atributo name colocado em fild, é o objeto referenciado em initialValues, se for colocado nomes diferentes, pode ser criado dois arrays diferentes...
+  e é podemos criar um outro objeto dentro de initialValues e referenciar eles 
+  em name atributo em fild: 
+   <Field name="user.name" />
